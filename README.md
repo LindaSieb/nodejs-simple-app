@@ -17,4 +17,4 @@ Detailed steps description for the session: [Mini CodeJam](/exercises/basic-code
 #test 1
 # test 2
 # test 2
-demo 7
+demo 8
