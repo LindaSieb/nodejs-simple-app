@@ -1,6 +1,0 @@
----
-applications:
-  name: nodejs1app8405049090
-    memory: 192M
-    instances: 1
-    random-route: false
