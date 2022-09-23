@@ -6,6 +6,6 @@
     "jade": "^1.11.0"
   },
   "scripts": {
-    "start": "echo \"hello\" "
+    "start": "node app/vcap_application.js"
   }
 }
