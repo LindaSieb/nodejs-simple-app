@@ -15,7 +15,7 @@ stages:
   cfApiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
   cfOrg: "CLOUDCI_democicd"
   cfSpace: "biser-test"
-  cfAppName: "hellohjajah"
+  cfAppName: ""
   cfCredentialsId: "cf-technical-user"
   cfManifest: "manifest.yml"
   uiVeri5ExecuteTests: false
