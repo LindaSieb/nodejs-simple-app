@@ -1,3 +1,3 @@
 cloudFoundryDeploy:
   manifestVariables:
-    - 'app_name=dsag_sl_2022'
+    - 'application name=dsag_sl_2022'
