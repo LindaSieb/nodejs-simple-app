@@ -1,3 +1,3 @@
 cloudFoundryDeploy:
  cfManifest:
- - applicationName: dsag_sl_2022
+ - applicationName: simplenodejsapp18062022
