@@ -17,7 +17,7 @@ stages:
   cfSpace: "biser-test"
   cfAppName: ""
   cfCredentialsId: "cf-technical-user"
-  cfManifest: ".pipeline/manifest.yml"
+  cfManifest: "manifest.yml"
   uiVeri5ExecuteTests: false
  Compliance:
   sonarExecuteScan: false
