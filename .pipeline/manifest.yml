@@ -1,3 +1,7 @@
 ---
 applications:
-  name: nodejs1app8405049090
+- name: DSAGAppBS2022
+  command: node DSAGAppBS2022.js
+  memory: 192M
+  instances: 1
+  random-route: false
