@@ -1,6 +1,6 @@
 ---
 applications:
-- name: DSAGAppBS2022
+- name: cf-nodejs
   memory: 192M
   instances: 1
   random-route: false
