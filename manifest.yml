@@ -1,7 +1,6 @@
 ---
 applications:
 - name: DSAGAppBS2022
-  command: echo "hello"
   memory: 192M
   instances: 1
   random-route: false
