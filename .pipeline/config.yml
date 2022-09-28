@@ -1,3 +1,30 @@
-cloudFoundryDeploy:
- cfManifest:
- - applicationName: simplenodejsapp18062022
+---
+general:
+  buildTool: "npm"
+service:
+  buildToolVersion: "N14"
+stages:
+  Build:
+    mavenExecuteStaticCodeChecks: false
+    npmExecuteLint: false
+  Additional Unit Tests:
+    npmExecuteScripts: false
+    karmaExecuteTests: false
+  Acceptance:
+    cloudFoundryDeploy: true
+    cfApiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
+    cfOrg: "CLOUDCI_democicd"
+    cfSpace: "biser-test"
+    cfAppName: ""
+    cfCredentialsId: "integr-test-s4sdk-cf-deploy"
+    uiVeri5ExecuteTests: false
+  Compliance:
+    sonarExecuteScan: false
+  Release:
+    cloudFoundryDeploy: false
+    tmsUpload: false
+steps:
+  artifactPrepareVersion:
+    versioningType: "cloud_noTag"
+  cloudFoundryDeploy:
+    mtaDeployParameters: "-f --version-rule ALL"
