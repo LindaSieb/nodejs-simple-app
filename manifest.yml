@@ -1,7 +1,7 @@
 ---
 applications:
 - name: DSAGAppBS2022
-  command: echo "hello"
+  command: node ../app/vcap_application.js
   memory: 192M
   instances: 1
   random-route: false
