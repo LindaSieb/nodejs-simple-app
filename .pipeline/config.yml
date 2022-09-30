@@ -11,7 +11,7 @@ stages:
     npmExecuteScripts: false
     karmaExecuteTests: false
   Acceptance:
-    cloudFoundryDeploy: true
+    cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
     cfOrg: "CLOUDCI_democicd"
     cfSpace: "biser-test"
@@ -21,8 +21,13 @@ stages:
   Compliance:
     sonarExecuteScan: false
   Release:
-    cloudFoundryDeploy: false
-    tmsUpload: false
+    cloudFoundryDeploy: true
+    cfApiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
+    cfOrg: "CLOUDCI_democicd"
+    cfSpace: "biser-test"
+    cfAppName: ""
+    cfCredentialsId: "integr-test-s4sdk-cf-deploy"
+    uiVeri5ExecuteTests: false
 steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
